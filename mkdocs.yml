@@ -1,0 +1,20 @@
+
+# mkdocs.yml
+site_name: this_is_a_test
+site_url: FILL OUT
+repo_url: https://github.com/rlmelvin/just-a-test.git
+nav:
+  - Home: index.md
+  - workflows:
+    - main: this_is_a_test/main.md
+  - this_is_a_test:
+    - plotter: this_is_a_test/plotter.md
+    - data: this_is_a_test/data.md
+    - evaluate: this_is_a_test/evaluate.md
+    - predict: this_is_a_test/predict.md
+    - train: this_is_a_test/utils.md
+theme: readthedocs
+plugins:
+  - mkdocstrings
+watch:
+  - .  # reload docs for any file changes
